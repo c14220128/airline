@@ -17,5 +17,7 @@ class TicketController extends Controller
             'is_boarding' => false,
             'boarding_time' => null,
         ]);
+
+        return redirect('/flights');
     }
 }

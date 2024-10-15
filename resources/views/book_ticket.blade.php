@@ -2,9 +2,8 @@
 
 @section('isi')
     <div class="p-32">
-        <form method="post">
+        <form action="/flight/book" method="post">
             @csrf
-
             <div class="flex  justify-between text-3xl font-bold border-b  border-1 border-black py-4">
                 <h1 class="">Ticket Booking For</h1>
 
@@ -41,7 +40,7 @@
 
             <div class="flex flex-wrap py-3 justify-end gap-8">
                 <a href="/flights" class="bg-red-600 text-white py-2 px-5 rounded"> Cancel </a>
-                <a href="/ticket/submit" class="bg-green-600 text-white py-2 px-5 rounded"> Book </a>
+                <input type="submit" class="bg-green-600 text-white py-2 px-5 rounded" value="Book">
             </div>
         </form>
 

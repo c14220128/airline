@@ -22,4 +22,6 @@ Route::get('/', function () {
 Route::get('/flights', [FlightController::class, 'daftar_penerbangan_page']);
 Route::get('/flights/book/{id}', [FlightController::class, 'book_ticket_page']);
 
-Route::post('/ticket/submit', [TicketController::class, 'book_ticket']);
+Route::post('/flights/submit', [TicketController::class, 'book_ticket']);
+
+
