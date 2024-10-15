@@ -20,11 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/flights', [FlightController::class, 'daftar_penerbangan_page']);
-Route::get('/flights/book/{id}', [FlightController::class, 'book_ticket_page']);
 
+Route::get('/flights/book/{id}', [FlightController::class, 'book_ticket_page']);
 Route::post('/flights/book/{id}', [TicketController::class, 'book_ticket']);
 
-Route::get('/flights/ticket/{id}: ', [FlightController::class, 'detail_ticket']);
+Route::get('/flights/ticket/{id}', [FlightController::class, 'detail_ticket']);
 
 
 
