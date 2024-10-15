@@ -21,7 +21,7 @@
                     <div class="p-3 flex justify-between">
                         <a href="/flights/book/{{ $flight->id }}"
                             class="bg-yellow-400 px-5 py-2 rounded-lg border border-black font-bold">Book Ticket</a>
-                        <a href="/flights/book/{{ $flight->id }}"
+                        <a href="/flights/ticket/{{ $flight->id }}"
                             class="bg-yellow-400 px-5 py-2 rounded-lg border border-black font-bold">View Details</a>
                     </div>
                 </div>

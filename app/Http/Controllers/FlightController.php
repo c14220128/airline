@@ -17,4 +17,11 @@ class FlightController extends Controller
         $flight = Flight::find($request->id);
         return view("book_ticket", compact('flight'));
     }
+
+    public function detail_ticket(Request $request){
+        $flight = Flight::find($request->id);
+        return view("detail_ticket", compact('flight'));
+    }
+
+
 }
