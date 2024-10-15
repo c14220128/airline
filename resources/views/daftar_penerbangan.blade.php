@@ -1,15 +1,12 @@
 @extends('template')
 
-@section('title')
-    Airplane Booking System
-@endsection
-
 @section('isi')
     <div class="p-32 flex flex-wrap">
         @foreach ($flights as $flight)
             <div class=" w-1/3 p-2">
                 <div class="p-3  rounded-5 border border-black rounded-xl bg-gray-200">
                     <div class="flex justify-between">
+
                         <div class="font-bold">{{ $flight->flight_code }}</div>
                         <div class="font-bold">{{ $flight->origin }} ➜ {{ $flight->destination }}</div>
                     </div>

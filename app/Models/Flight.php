@@ -10,6 +10,8 @@ class Flight extends Model
 {
     use HasFactory;
 
+    
+
     public function departure_formatted(){
         return Carbon::parse($this->departure_time)->format('l, d F Y H:i');
     }

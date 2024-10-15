@@ -12,4 +12,9 @@ class FlightController extends Controller
         $flights = Flight::all();
         return view('daftar_penerbangan', compact('flights'));
     }
+
+    public function book_ticket_page(Request $request){
+        $flight = Flight::find($request->id);
+        return view("book_ticket", compact('flight'));
+    }
 }
