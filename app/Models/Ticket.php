@@ -11,10 +11,10 @@ class Ticket extends Model
 
     protected $fillable = [
         'flight_id',
-        'passanger_name',
+        'passenger_name',
         'passenger_phone',
         'seat_number',
         'is_boarding',
-        'boarding_time',    
+        'boarding_time',
     ];
 }

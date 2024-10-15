@@ -2,7 +2,7 @@
 
 @section('isi')
     <div class="p-32">
-        <form action="/flight/book" method="post">
+        <form method="post">
             @csrf
             <div class="flex  justify-between text-3xl font-bold border-b  border-1 border-black py-4">
                 <h1 class="">Ticket Booking For</h1>

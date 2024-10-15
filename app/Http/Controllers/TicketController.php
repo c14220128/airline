@@ -11,7 +11,7 @@ class TicketController extends Controller
     {
         Ticket::create([
             'flight_id' => $request->input("flight_id"),
-            'passanger_name' => $request->input("pass_name"),
+            'passenger_name' => $request->input("pass_name"),
             'passenger_phone' => $request->input("pass_phone"),
             'seat_number' => $request->input("seat_number"),
             'is_boarding' => false,
