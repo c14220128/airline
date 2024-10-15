@@ -11,7 +11,7 @@
 
 <body>
     <div class="bg-yellow-400 py-4 fixed w-full">
-        <h1 class="text-3xl font-bold text-center text-black ">@yield('title')</h1>
+        <h1 class="text-3xl font-bold text-center text-black ">Airplane Booking System</h1>
     </div>
     <div class="container mx-auto min-h-screen">
         @yield('isi')
